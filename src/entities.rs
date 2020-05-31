@@ -111,7 +111,7 @@ pub struct MediaEntity {
 }
 
 ///Represents the types of media that can be attached to a tweet.
-#[derive(Debug, Copy, Clone, Deserialize)]
+#[derive(Debug, Copy, Clone, Deserialize, PartialEq)]
 pub enum MediaType {
     ///A static image.
     #[serde(rename = "photo")]
